@@ -43,10 +43,6 @@ const breadcrumbSchema = {
 
 const pressHighlights = [
   {
-    stat: "500+",
-    label: "Students Taught"
-  },
-  {
     stat: "2020",
     label: "Founded"
   },

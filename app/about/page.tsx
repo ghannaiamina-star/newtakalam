@@ -155,22 +155,12 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-8">
-              <div className="bg-white rounded-2xl shadow-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Our Numbers</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { number: "500+", label: "Students Taught" },
-                    { number: "5000+", label: "Hours of Lessons" },
-                    { number: "98%", label: "Student Satisfaction" },
-                    { number: "3+", label: "Years Experience" },
-                  ].map((stat, i) => (
-                    <div key={i} className="text-center p-4 bg-gray-50 rounded-xl">
-                      <div className="text-2xl font-bold text-green-600">{stat.number}</div>
-                      <div className="text-sm text-gray-600">{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl p-8 flex items-center justify-center">
+              <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                <p className="text-gray-600">
+                  Help Moroccan learners gain confidence in speaking English through personalized, conversation-focused lessons.
+                </p>
               </div>
             </div>
           </div>

@@ -106,23 +106,7 @@ export default function FinalCTA() {
             {t("finalCta.trustText")}
           </p>
 
-          {/* Small images of students */}
-          <div className="mt-10 flex justify-center items-center gap-4">
-            <div className="flex -space-x-3">
-              <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative">
-                <Image src="/student-focused.png" alt="Focused English learner during online session" fill className="object-cover" />
-              </div>
-              <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative">
-                <Image src="/cafe-learning.png" alt="Student learning English from a cafe" fill className="object-cover" />
-              </div>
-              <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative">
-                <Image src="/learning-setup.png" alt="Online English learning setup" fill className="object-cover" />
-              </div>
-            </div>
-            <p className="text-green-100 text-sm">
-              {t("finalCta.joinLearners")}
-            </p>
-          </div>
+
         </div>
       </div>
     </section>

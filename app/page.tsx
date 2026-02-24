@@ -10,12 +10,10 @@ import ComparePlans from "./components/ComparePlans";
 import HowItWorks from "./components/HowItWorks";
 import HowToPrepare from "./components/HowToPrepare";
 import Testimonials from "./components/Testimonials";
-import Stats from "./components/Stats";
 import ProgressTracker from "./components/ProgressTracker";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ExitIntentPopup from "./components/ExitIntentPopup";
 
 export default function Home() {
   return (
@@ -54,7 +52,6 @@ export default function Home() {
         
         {/* Social Proof & Conversion */}
         <Testimonials />
-        <Stats />
         
         {/* Progress Tracker Preview */}
         <ProgressTracker />
@@ -66,9 +63,6 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-      
-      {/* Exit Intent Popup - captures leaving visitors */}
-      <ExitIntentPopup />
     </>
   );
 }

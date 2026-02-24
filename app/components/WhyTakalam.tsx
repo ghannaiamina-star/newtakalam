@@ -175,11 +175,7 @@ export default function WhyTakalam() {
                 />
               </div>
             ))}
-            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg ring-4 ring-white">
-              <span className="text-white font-bold text-sm sm:text-base">+500</span>
-            </div>
           </div>
-          <p className="text-center text-sm text-gray-500 mt-4">{t("whyTakalam.learnersJoined")}</p>
         </div>
 
         {/* Key Differentiators - Compact Row */}

@@ -223,29 +223,7 @@ export default function CorporatePage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-white border-b">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl lg:text-4xl font-bold text-emerald-600">50+</div>
-              <div className="text-slate-600 mt-1">Companies Trained</div>
-            </div>
-            <div>
-              <div className="text-3xl lg:text-4xl font-bold text-emerald-600">500+</div>
-              <div className="text-slate-600 mt-1">Professionals Coached</div>
-            </div>
-            <div>
-              <div className="text-3xl lg:text-4xl font-bold text-emerald-600">95%</div>
-              <div className="text-slate-600 mt-1">Client Satisfaction</div>
-            </div>
-            <div>
-              <div className="text-3xl lg:text-4xl font-bold text-emerald-600">5+</div>
-              <div className="text-slate-600 mt-1">Years Experience</div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Benefits Section */}
       <section className="py-20">
