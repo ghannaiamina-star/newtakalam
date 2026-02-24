@@ -7,7 +7,12 @@
     "faq": "FAQ",
     "contact": "Contact",
     "getStarted": "Get Started",
-    "becomeATutor": "Become a Tutor"
+    "teachWithUs": "Teach with Us"
+  },
+  "hiring": {
+    "badge": "We're Hiring!",
+    "text": "Join our team of English tutors",
+    "cta": "Apply Now"
   },
   "hero": {
     "badge": "Private & Group English Coaching",

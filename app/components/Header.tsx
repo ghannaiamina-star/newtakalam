@@ -28,12 +28,22 @@ export default function Header() {
     { href: "#group-sessions", label: t("header.groupSessions") },
     { href: "#faq", label: t("header.faq") },
     { href: "#contact", label: t("header.contact") },
+    { href: "/careers", label: t("header.teachWithUs"), isHiring: true },
   ];
 
   return (
     <>
+      {/* Hiring Banner */}
+      <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center py-2 px-4 text-sm fixed top-0 left-0 right-0 z-[60]">
+        <a href="/careers" className="flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+          <span className="font-semibold">{t("hiring.badge")}</span>
+          <span className="hidden sm:inline">—</span>
+          <span className="hidden sm:inline">{t("hiring.text")}</span>
+          <span className="underline font-medium ml-2">{t("hiring.cta")} →</span>
+        </a>
+      </div>
       <header
-      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
+      className={`fixed top-8 left-0 right-0 z-50 w-full transition-all duration-300 ${
         isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-white"
       }`}
       style={{ direction: "ltr" }}
@@ -70,9 +80,18 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-600 hover:text-green-600 transition-colors text-sm xl:text-[15px] font-medium whitespace-nowrap"
+                className={`transition-colors text-sm xl:text-[15px] font-medium whitespace-nowrap ${
+                  link.isHiring 
+                    ? "text-orange-600 hover:text-orange-700 flex items-center gap-1" 
+                    : "text-gray-600 hover:text-green-600"
+                }`}
               >
                 {link.label}
+                {link.isHiring && (
+                  <span className="inline-flex items-center justify-center px-1.5 py-0.5 text-[10px] font-bold bg-orange-500 text-white rounded-full animate-pulse">
+                    NEW
+                  </span>
+                )}
               </a>
             ))}
           </nav>
@@ -82,12 +101,6 @@ export default function Header() {
             className="hidden lg:flex items-center gap-3 flex-shrink-0"
             style={{ direction: "ltr" }}
           >
-            <a
-              href="/careers"
-              className="text-green-600 hover:text-green-700 transition-colors text-sm font-medium whitespace-nowrap"
-            >
-              {t("header.becomeATutor")}
-            </a>
             <LanguageSwitcher />
             <a
               href="#contact"
@@ -143,19 +156,21 @@ export default function Header() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-gray-600 hover:text-green-600 hover:bg-gray-50 transition-colors px-4 py-3 rounded-lg"
+                  className={`hover:bg-gray-50 transition-colors px-4 py-3 rounded-lg flex items-center justify-between ${
+                    link.isHiring 
+                      ? "text-orange-600 hover:text-orange-700" 
+                      : "text-gray-600 hover:text-green-600"
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
+                  {link.isHiring && (
+                    <span className="inline-flex items-center justify-center px-2 py-0.5 text-[10px] font-bold bg-orange-500 text-white rounded-full animate-pulse">
+                      HIRING
+                    </span>
+                  )}
                 </a>
               ))}
-              <a
-                href="/careers"
-                className="text-green-600 hover:text-green-700 hover:bg-green-50 transition-colors px-4 py-3 rounded-lg font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("header.becomeATutor")}
-              </a>
               <div className="px-4 py-3 border-t border-gray-100 mt-2">
                 <LanguageSwitcher />
               </div>

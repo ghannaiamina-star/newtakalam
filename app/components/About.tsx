@@ -86,16 +86,17 @@ export default function About() {
               </p>
               
               <p>
-                Founded by Said, a Moroccan English teacher, we bring together a team of 
-                qualified tutors who focus on adults who already understand English but freeze 
-                when it's time to speak. No textbook drills. No boring grammar exercises. 
+                We bring together a team of qualified Moroccan tutors who focus on adults 
+                who already understand English but freeze when it's time to speak. 
+                No textbook drills. No boring grammar exercises. 
                 Just real conversations that build real confidence.
               </p>
               
               <p>
-                Born in Morocco with a global mindset, Takalam understands the unique 
-                challenges Arabic and French speakers face when learning English. Our tutors 
-                meet you where you are and help you get where you want to be.
+                When you sign up, you get matched with one of our expert tutors based on 
+                your level and goals. Born in Morocco with a global mindset, Takalam 
+                understands the unique challenges Arabic and French speakers face. 
+                Our tutors meet you where you are and help you get where you want to be.
               </p>
             </div>
 

@@ -16,7 +16,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center pt-32 sm:pt-28 lg:pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-green-50/50 to-white overflow-hidden">
+    <section className="min-h-screen flex items-center pt-40 sm:pt-36 lg:pt-48 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-green-50/50 to-white overflow-hidden">
       <div className="max-w-6xl mx-auto w-full">
         <div className={`grid lg:grid-cols-2 gap-12 items-center ${isRTL ? "direction-rtl" : ""}`}>
           {/* Content */}

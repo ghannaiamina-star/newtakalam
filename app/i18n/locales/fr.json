@@ -7,7 +7,12 @@
     "faq": "FAQ",
     "contact": "Contact",
     "getStarted": "Commencer",
-    "becomeATutor": "Devenir Tuteur"
+    "teachWithUs": "Enseignez avec Nous"
+  },
+  "hiring": {
+    "badge": "On Recrute!",
+    "text": "Rejoignez notre équipe de tuteurs d'anglais",
+    "cta": "Postuler"
   },
   "hero": {
     "badge": "Coaching d'Anglais Privé & en Groupe",
