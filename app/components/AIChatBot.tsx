@@ -122,8 +122,8 @@ const faqKnowledge = {
     // TEACHER & METHOD
     {
       category: "teacher",
-      keywords: ["teacher", "who", "said", "instructor", "tutor", "coach", "about you", "experience", "qualified"],
-      answer: "👋 Meet your teacher - Said!\n\n🎓 Moroccan English teacher\n📚 Years of experience with adult learners\n🎯 Focus: Speaking confidence & fluency\n💬 Method: Practical, real-life English\n❌ NOT: Boring textbook grammar\n\nMy goal? Help you SPEAK confidently, not memorize rules. I understand the challenges Moroccan learners face because I've been there too!",
+      keywords: ["teacher", "who", "said", "instructor", "tutor", "coach", "about you", "experience", "qualified", "team", "tutors"],
+      answer: "👋 Meet the Takalam Team!\n\n🏫 Founded by Said, a Moroccan English teacher\n🌟 Team of qualified English tutors\n📚 Years of experience with adult learners\n🎯 Focus: Speaking confidence & fluency\n💬 Method: Practical, real-life English\n❌ NOT: Boring textbook grammar\n\nOur goal? Help you SPEAK confidently, not memorize rules. We understand the challenges Moroccan learners face!",
       followUp: ["What's your teaching method?", "What will I learn?"]
     },
     {

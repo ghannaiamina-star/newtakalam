@@ -78,8 +78,8 @@ export default function Footer() {
               <a href="/press" className="hover:text-green-400 transition-colors">
                 Press & Media
               </a>
-              <a href="/careers" className="hover:text-green-400 transition-colors">
-                {t("footer.teachWithUs")}
+              <a href="/careers" className="text-green-400 hover:text-green-300 transition-colors font-medium">
+                {t("footer.teachWithUs")} →
               </a>
               <a href="#faq" className="hover:text-green-400 transition-colors">
                 {t("footer.faq")}

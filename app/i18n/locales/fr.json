@@ -1,12 +1,13 @@
 {
   "header": {
-    "meetTeacher": "Rencontrez Votre Professeur",
+    "meetTeacher": "Nos Tuteurs",
     "whyTakalam": "Pourquoi Takalam",
     "privateSessions": "Sessions 1-on-1",
     "groupSessions": "Sessions de Groupe",
     "faq": "FAQ",
     "contact": "Contact",
-    "getStarted": "Commencer"
+    "getStarted": "Commencer",
+    "becomeATutor": "Devenir Tuteur"
   },
   "hero": {
     "badge": "Coaching d'Anglais Privé & en Groupe",
@@ -26,14 +27,14 @@
     "badge2Subtitle": "Zoom / Meet"
   },
   "introVideo": {
-    "title": "Un Message de",
-    "titleHighlight": "Votre Professeur",
-    "arabicSubtitle": "تعرف عليّ قبل ما تبدأ",
-    "watchVideo": "Regardez: Un Message de Votre Professeur",
+    "title": "Bienvenue chez",
+    "titleHighlight": "Takalam",
+    "arabicSubtitle": "تعرف على فريقنا قبل ما تبدأ",
+    "watchVideo": "Regardez: Rencontrez l'Équipe Takalam",
     "videoDuration": "1:30 min",
     "videoComingSoon": "Vidéo Bientôt Disponible",
-    "whoIAm": "Qui Suis-Je",
-    "whoIAmText": "Je suis Said, un professeur d'anglais marocain avec des années d'expérience à aider les adultes à gagner en confiance pour parler. Je me concentre sur l'anglais pratique de la vie réelle, pas sur la perfection des manuels. Mon objectif est de vous aider à parler clairement, naturellement et avec confiance dans toute situation.",
+    "whoIAm": "Qui Sommes-Nous",
+    "whoIAmText": "Fondée par Said, un professeur d'anglais marocain avec des années d'expérience, Takalam réunit une équipe de tuteurs qualifiés dédiés à aider les adultes à gagner en confiance pour parler. Nous nous concentrons sur l'anglais pratique de la vie réelle, pas sur la perfection des manuels. Notre objectif est de vous aider à parler clairement, naturellement et avec confiance dans toute situation.",
     "whoThisIsFor": "À Qui S'adresse Ce Programme",
     "whoThisIsForText": "Les adultes qui comprennent l'anglais mais ont du mal à le parler. Professionnels, chercheurs d'emploi, ou toute personne qui se sent bloquée et veut enfin communiquer couramment.",
     "whatMakesDifferent": "Ce Qui Rend Takalam Différent",
@@ -52,8 +53,8 @@
     "diff2Desc": "Pas de jugement, erreurs bienvenues",
     "diff3Title": "Personnalisé",
     "diff3Desc": "Leçons adaptées à vos objectifs",
-    "diff4Title": "Vrai Professeur",
-    "diff4Desc": "Pas d'IA, pas de vidéos préenregistrées",
+    "diff4Title": "Tuteurs Experts",
+    "diff4Desc": "Professeurs qualifiés, pas d'IA ou vidéos",
     "audienceTitle": "Takalam Est-il Fait",
     "audienceTitleHighlight": "Pour Vous",
     "audienceSubtitle": "Si l'un de ces objectifs vous parle, parlons-en.",
@@ -254,7 +255,7 @@
     "headline": "Prêt à Parler Anglais",
     "headlineHighlight": "avec Confiance?",
     "darijaTagline": "واش نتا/نتي ready؟ يلاه نبداو! 💪",
-    "subtext": "Vous me connaissez déjà des réseaux sociaux. Maintenant, travaillons ensemble. Choisissez votre forfait, payez et commencez votre parcours en anglais.",
+    "subtext": "Rejoignez des centaines d'apprenants qui font confiance à Takalam. Choisissez votre forfait, payez et commencez votre parcours en anglais avec nos tuteurs experts.",
     "ctaPackages": "Voir les Forfaits",
     "ctaRegister": "S'inscrire",
     "trustText": "Essayez avec une session unique (200 DHS) • Paiement sécurisé • WhatsApp disponible à tout moment",
@@ -372,7 +373,7 @@
     "autoSaved": "Progression sauvegardée"
   },
   "footer": {
-    "description": "Tutorat d'anglais personnel pour adultes. Racines marocaines, vision mondiale.",
+    "description": "Tutorat d'anglais expert pour adultes. Racines marocaines, vision mondiale.",
     "about": "À Propos",
     "ielts": "Prépa IELTS",
     "businessEnglish": "Anglais des Affaires",

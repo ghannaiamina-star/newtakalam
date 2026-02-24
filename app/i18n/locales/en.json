@@ -1,12 +1,13 @@
 {
   "header": {
-    "meetTeacher": "Meet Your Teacher",
+    "meetTeacher": "Our Tutors",
     "whyTakalam": "Why Takalam",
     "privateSessions": "1-on-1 Sessions",
     "groupSessions": "Group Sessions",
     "faq": "FAQ",
     "contact": "Contact",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "becomeATutor": "Become a Tutor"
   },
   "hero": {
     "badge": "Private & Group English Coaching",
@@ -26,14 +27,14 @@
     "badge2Subtitle": "Zoom / Meet"
   },
   "introVideo": {
-    "title": "A Message from",
-    "titleHighlight": "Your Teacher",
-    "arabicSubtitle": "تعرف عليّ قبل ما تبدأ",
-    "watchVideo": "Watch: A Message from Your Teacher",
+    "title": "Welcome to",
+    "titleHighlight": "Takalam",
+    "arabicSubtitle": "تعرف على فريقنا قبل ما تبدأ",
+    "watchVideo": "Watch: Meet the Takalam Team",
     "videoDuration": "1:30 min",
     "videoComingSoon": "Video Coming Soon",
-    "whoIAm": "Who I Am",
-    "whoIAmText": "I'm Said, a Moroccan English teacher with years of experience helping adults gain confidence in speaking. I focus on practical, real-life English, not textbook perfection. My goal is to help you speak clearly, naturally, and confidently in any situation.",
+    "whoIAm": "Who We Are",
+    "whoIAmText": "Founded by Said, a Moroccan English teacher with years of experience, Takalam brings together a team of qualified tutors dedicated to helping adults gain confidence in speaking. We focus on practical, real-life English, not textbook perfection. Our goal is to help you speak clearly, naturally, and confidently in any situation.",
     "whoThisIsFor": "Who This Is For",
     "whoThisIsForText": "Adults who understand English but struggle to speak it. Professionals, job seekers, or anyone who feels stuck and wants to finally communicate fluently.",
     "whatMakesDifferent": "What Makes Takalam Different",
@@ -52,8 +53,8 @@
     "diff2Desc": "No judgment, mistakes welcome",
     "diff3Title": "Personalized",
     "diff3Desc": "Lessons built around your goals",
-    "diff4Title": "Real Teacher",
-    "diff4Desc": "Not AI, not pre-recorded videos",
+    "diff4Title": "Expert Tutors",
+    "diff4Desc": "Qualified teachers, not AI or videos",
     "audienceTitle": "Is Takalam Right",
     "audienceTitleHighlight": "For You",
     "audienceSubtitle": "If any of these goals resonate with you, we should talk.",
@@ -254,7 +255,7 @@
     "headline": "Ready to Speak English",
     "headlineHighlight": "with Confidence?",
     "darijaTagline": "واش نتا/نتي ready؟ يلاه نبداو! 💪",
-    "subtext": "You already know me from social media. Now let's work together. Choose your package, pay, and start your English journey.",
+    "subtext": "Join hundreds of learners who trust Takalam. Choose your package, pay, and start your English journey with our expert tutors.",
     "ctaPackages": "View Packages",
     "ctaRegister": "Register Now",
     "trustText": "Try with a single session (200 DHS) • Secure payment • Chat with us anytime on WhatsApp",
@@ -372,7 +373,7 @@
     "autoSaved": "Progress auto-saved"
   },
   "footer": {
-    "description": "Personal English tutoring for adults. Moroccan roots, global mindset.",
+    "description": "Expert English tutoring for adults. Moroccan roots, global mindset.",
     "about": "About",
     "ielts": "IELTS Prep",
     "businessEnglish": "Business English",

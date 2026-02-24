@@ -81,20 +81,21 @@ export default function About() {
             
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Takalam is a personal English tutoring brand built on one simple belief: 
+                Takalam is an English tutoring platform built on one simple belief: 
                 <strong className="text-gray-800"> everyone can learn to speak English confidently</strong>.
               </p>
               
               <p>
-                We focus on adults who already understand English but freeze when it's time 
-                to speak. No textbook drills. No boring grammar exercises. Just real 
-                conversations that build real confidence.
+                Founded by Said, a Moroccan English teacher, we bring together a team of 
+                qualified tutors who focus on adults who already understand English but freeze 
+                when it's time to speak. No textbook drills. No boring grammar exercises. 
+                Just real conversations that build real confidence.
               </p>
               
               <p>
                 Born in Morocco with a global mindset, Takalam understands the unique 
-                challenges Arabic and French speakers face when learning English. We meet 
-                you where you are and help you get where you want to be.
+                challenges Arabic and French speakers face when learning English. Our tutors 
+                meet you where you are and help you get where you want to be.
               </p>
             </div>
 
@@ -103,7 +104,7 @@ export default function About() {
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Human approach
+                Expert tutors
               </div>
               <div className="flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full text-green-700 text-sm font-medium">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

@@ -3,8 +3,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Takalam English Center | Meet Your English Teacher Morocco",
-  description: "Meet the team behind Takalam English Center. Professional English teachers dedicated to helping Moroccans speak fluent English with confidence.",
+  title: "About Takalam English Center | Expert English Tutors Morocco",
+  description: "Meet the team behind Takalam English Center. Professional English tutors dedicated to helping Moroccans speak fluent English with confidence.",
   keywords: [
     "English teacher Morocco",
     "about Takalam English",
@@ -140,13 +140,14 @@ export default function AboutPage() {
                   but when it comes to speaking – they freeze.
                 </p>
                 <p>
-                  We understand this because we&apos;ve been there. As Moroccan English speakers ourselves, 
+                  Founded by Said, a Moroccan English teacher with years of experience, Takalam has grown 
+                  into a team of qualified tutors who share this understanding. As Moroccan English speakers, 
                   we know the unique challenges Arabic speakers face: the fear of making mistakes, 
                   the different sentence structures, the pronunciation hurdles.
                 </p>
                 <p>
-                  That&apos;s why we created Takalam – a learning experience designed specifically for 
-                  Moroccans. We focus on what matters most: <strong>speaking practice</strong>. 
+                  That&apos;s why we built Takalam – a platform designed specifically for 
+                  Moroccans. Our tutors focus on what matters most: <strong>speaking practice</strong>. 
                   Real conversations, not textbook exercises. Personalized feedback, not generic lessons.
                 </p>
                 <p>
@@ -163,7 +164,7 @@ export default function AboutPage() {
                     { number: "500+", label: "Students Taught" },
                     { number: "5000+", label: "Hours of Lessons" },
                     { number: "98%", label: "Student Satisfaction" },
-                    { number: "3+", label: "Years Experience" },
+                    { number: "10+", label: "Expert Tutors" },
                   ].map((stat, i) => (
                     <div key={i} className="text-center p-4 bg-gray-50 rounded-xl">
                       <div className="text-2xl font-bold text-green-600">{stat.number}</div>
@@ -214,7 +215,7 @@ export default function AboutPage() {
               {
                 title: "Cultural Understanding",
                 icon: "🇲🇦",
-                desc: "As Moroccan teachers, we understand your cultural context. We know the specific challenges Arabic speakers face and how to overcome them."
+                desc: "As Moroccan tutors, we understand your cultural context. We know the specific challenges Arabic speakers face and how to overcome them."
               },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 shadow-sm">
@@ -251,7 +252,7 @@ export default function AboutPage() {
                   { feature: "Location", traditional: "Travel to center", takalam: "Learn from home" },
                   { feature: "Curriculum", traditional: "Same for everyone", takalam: "Personalized to you" },
                   { feature: "Feedback", traditional: "Generic grades", takalam: "Detailed, specific" },
-                  { feature: "Teacher", traditional: "Changes often", takalam: "Same teacher always" },
+                  { feature: "Teacher", traditional: "Changes often", takalam: "Matched to your goals" },
                 ].map((row, i) => (
                   <tr key={i} className="border-b border-gray-100">
                     <td className="py-4 px-6 font-medium text-gray-900">{row.feature}</td>
@@ -325,10 +326,10 @@ export default function AboutPage() {
               </svg>
             </Link>
             <Link
-              href="/blog"
+              href="/careers"
               className="inline-flex items-center gap-2 px-8 py-4 bg-green-700 text-white font-semibold rounded-xl hover:bg-green-800 transition-colors"
             >
-              Read Our Blog
+              Become a Tutor
             </Link>
           </div>
         </div>
@@ -341,6 +342,7 @@ export default function AboutPage() {
           <div className="flex justify-center gap-6 mt-4 text-sm">
             <Link href="/" className="hover:text-green-400">Home</Link>
             <Link href="/blog" className="hover:text-green-400">Blog</Link>
+            <Link href="/careers" className="hover:text-green-400">Become a Tutor</Link>
             <Link href="/ielts" className="hover:text-green-400">IELTS</Link>
             <Link href="/business-english" className="hover:text-green-400">Business English</Link>
             <Link href="/rules" className="hover:text-green-400">Terms</Link>

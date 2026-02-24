@@ -82,6 +82,12 @@ export default function Header() {
             className="hidden lg:flex items-center gap-3 flex-shrink-0"
             style={{ direction: "ltr" }}
           >
+            <a
+              href="/careers"
+              className="text-green-600 hover:text-green-700 transition-colors text-sm font-medium whitespace-nowrap"
+            >
+              {t("header.becomeATutor")}
+            </a>
             <LanguageSwitcher />
             <a
               href="#contact"
@@ -143,6 +149,13 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
+              <a
+                href="/careers"
+                className="text-green-600 hover:text-green-700 hover:bg-green-50 transition-colors px-4 py-3 rounded-lg font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("header.becomeATutor")}
+              </a>
               <div className="px-4 py-3 border-t border-gray-100 mt-2">
                 <LanguageSwitcher />
               </div>
