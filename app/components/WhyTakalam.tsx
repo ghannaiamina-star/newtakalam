@@ -257,7 +257,7 @@ export default function WhyTakalam() {
         >
           <p className="text-gray-600 mb-4">{t("whyTakalam.soundLikeYou")}</p>
           <a
-            href="#pricing"
+            href="/private-sessions"
             className="inline-flex items-center gap-2 btn-primary bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700"
           >
             {t("whyTakalam.viewPackages")}
