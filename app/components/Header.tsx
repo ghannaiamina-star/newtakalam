@@ -58,7 +58,7 @@ export default function Header() {
         >
           {/* Logo - LEFT */}
           <div className="flex-shrink-0 -my-20 sm:-my-24 md:-my-26 lg:-my-28">
-            <a href="#">
+            <a href="/">
               <Image
                 src="/logo.png"
                 alt="TAKALAM"
