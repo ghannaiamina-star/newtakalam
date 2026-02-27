@@ -328,6 +328,15 @@ export default function CareersPage() {
       setUploadStage('done');
       setUploadProgress('');
       setSubmitSuccess(true);
+      
+      // Track Meta Pixel event for teacher application
+      if (typeof window !== 'undefined' && (window as typeof window & { fbq?: (...args: unknown[]) => void }).fbq) {
+        (window as typeof window & { fbq: (...args: unknown[]) => void }).fbq('track', 'SubmitApplication', {
+          content_name: 'Teacher Application',
+          content_category: 'Recruitment'
+        });
+      }
+      
       setFormStep(1);
       setFormData({
         firstName: '',

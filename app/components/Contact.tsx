@@ -242,6 +242,15 @@ export default function Contact() {
       // With no-cors mode, we can't read the response, so we assume success
       // The Google Script handles errors internally
 
+      // Track Meta Pixel Lead event
+      if (typeof window !== 'undefined' && (window as typeof window & { fbq?: (...args: unknown[]) => void }).fbq) {
+        (window as typeof window & { fbq: (...args: unknown[]) => void }).fbq('track', 'Lead', {
+          content_name: formData.package || 'Registration',
+          content_category: 'English Course',
+          currency: 'MAD'
+        });
+      }
+
       setSubmitStatus('success');
       setPaymentScreenshot(null);
       setPaymentPreview(null);
