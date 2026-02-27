@@ -413,158 +413,10 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* STEP 1: Make Payment */}
-        <div
-          className={`mb-10 ${isVisible ? "animate-fade-in-up delay-150" : "opacity-0"}`}
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <div className={`w-10 h-10 ${isGroupPackage ? 'bg-blue-600' : 'bg-green-600'} rounded-full flex items-center justify-center flex-shrink-0`}>
-              <span className="text-white font-bold">1</span>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg text-gray-800">{t("contact.makePayment")}</h3>
-              <p className="text-sm text-gray-600">{t("contact.makePaymentDesc")}</p>
-            </div>
-          </div>
-          
-          {/* Package Prices */}
-          <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-sm mb-6">
-            <h4 className="font-semibold text-gray-800 mb-3">{t("contact.packagePrices")}</h4>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              {packagesData.map((pkg) => (
-                <div key={pkg.id} className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                  <span className="text-gray-600 text-sm">{pkg.name}</span>
-                  <span className="font-bold text-green-600">{pkg.price}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Payment Options */}
-          <div className="grid lg:grid-cols-2 gap-6">
-            {/* Bank Transfer */}
-            <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-2xl p-6 text-white">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">{t("contact.bankingTitle")}</h3>
-                  <p className="text-green-100 text-sm">{t("contact.bankingSubtitle")}</p>
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <div className="bg-white/10 rounded-lg p-2.5">
-                  <p className="text-green-200 text-xs uppercase tracking-wide mb-0.5">{t("contact.accountHolder")}</p>
-                  <p className="font-semibold text-sm">MONSIEUR MOHAMMED SAID EL BOUZDOUDI</p>
-                </div>
-                <div className="bg-white/10 rounded-lg p-2.5">
-                  <p className="text-green-200 text-xs uppercase tracking-wide mb-0.5">RIB</p>
-                  <p className="font-mono font-bold text-sm tracking-wide">230 727 2633040211016600 70</p>
-                </div>
-                <div className="bg-white/10 rounded-lg p-2.5">
-                  <p className="text-green-200 text-xs uppercase tracking-wide mb-0.5">IBAN</p>
-                  <p className="font-mono font-bold text-sm tracking-wide">MA64 2307 2726 3304 0211 0166 0070</p>
-                </div>
-                <div className="bg-white/10 rounded-lg p-2.5">
-                  <p className="text-green-200 text-xs uppercase tracking-wide mb-0.5">Code SWIFT</p>
-                  <p className="font-mono font-bold">CIHMMAMC</p>
-                </div>
-              </div>
-
-              <div className="mt-4 pt-4 border-t border-white/20">
-                <p className="text-green-100 text-sm mb-3 text-center font-medium">
-                  {t("contact.scanToPay")}
-                </p>
-                <button
-                  onClick={() => setShowQRModal(true)}
-                  className="bg-white rounded-2xl p-3 mx-auto w-fit block cursor-pointer hover:scale-105 transition-transform"
-                >
-                  <Image
-                    src="/bank-qr.png"
-                    alt="Scan for bank details - Click to enlarge"
-                    width={280}
-                    height={400}
-                    className="w-full max-w-[180px] h-auto rounded-xl"
-                  />
-                  <p className="text-xs text-gray-500 mt-2 text-center">{t("contact.clickToEnlarge")}</p>
-                </button>
-              </div>
-
-              <div className="mt-4 pt-4 border-t border-white/20">
-                <p className="text-green-100 text-sm">
-                  {t("contact.transferNote")}
-                </p>
-              </div>
-            </div>
-
-            {/* PayPal */}
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-6 text-white">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.59 3.025-2.566 6.082-8.558 6.082h-2.19c-1.717 0-3.146 1.27-3.403 2.955l-1.12 7.106c-.083.518.32.99.846.99h4.606c.524 0 .967-.382 1.05-.9l.896-5.678c.082-.518.525-.9 1.05-.9h.677c4.298 0 7.664-1.746 8.647-6.796.403-2.067.135-3.666-1.853-4.572z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">{t("contact.paypalTitle")}</h3>
-                  <p className="text-blue-100 text-sm">{t("contact.paypalSubtitle")}</p>
-                </div>
-              </div>
-
-              <div className="bg-white/10 rounded-xl p-4 mb-4">
-                <p className="text-blue-200 text-xs uppercase tracking-wide mb-2">{t("contact.paypalSendTo")}</p>
-                <p className="font-mono font-bold text-lg break-all">mohammedsaidelbouzdoudi99@gmail.com</p>
-              </div>
-
-              <div className="space-y-3">
-                <div className="bg-white/10 rounded-lg p-3">
-                  <p className="text-blue-200 text-sm mb-2">{t("contact.paypalHowTo")}</p>
-                  <ol className="text-sm space-y-1.5 text-blue-50">
-                    <li className="flex items-start gap-2">
-                      <span className="bg-white/20 rounded-full w-5 h-5 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">1</span>
-                      <span>{t("contact.paypalStep1")}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="bg-white/20 rounded-full w-5 h-5 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">2</span>
-                      <span>{t("contact.paypalStep2")}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="bg-white/20 rounded-full w-5 h-5 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">3</span>
-                      <span>{t("contact.paypalStep3")}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="bg-white/20 rounded-full w-5 h-5 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">4</span>
-                      <span>{t("contact.paypalStep4")}</span>
-                    </li>
-                  </ol>
-                </div>
-              </div>
-
-              <p className="text-blue-200 text-xs mt-4 text-center">
-                {t("contact.paypalIdeal")}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* STEP 2: Register & Send Proof */}
+        {/* Registration Form */}
         <div
           className={`mb-6 ${isVisible ? "animate-fade-in-up delay-200" : "opacity-0"}`}
         >
-          <div className="flex items-center gap-3 mb-4">
-            <div className={`w-10 h-10 ${isGroupPackage ? 'bg-blue-600' : 'bg-green-600'} rounded-full flex items-center justify-center flex-shrink-0`}>
-              <span className="text-white font-bold">2</span>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg text-gray-800">{t("contact.registerSendProof")}</h3>
-              <p className="text-sm text-gray-600">{t("contact.registerSendProofDesc")}</p>
-            </div>
-          </div>
-
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100">
             <h3 className="text-xl font-semibold text-gray-800 mb-6">
               {t("contact.formTitle")}
@@ -918,6 +770,120 @@ export default function Contact() {
                       </h4>
                       <p className="text-sm text-amber-600 mt-1">{t("contact.formStep3Desc")}</p>
                     </div>
+
+                {/* Selected Package Summary */}
+                {hasSelectedPackage && (
+                  <div className="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <p className="text-sm text-gray-500 mb-1">{t("contact.packageSelected")}</p>
+                    <p className="font-semibold text-gray-800">
+                      {packagesData.find(p => p.id === formData.package)?.name} — <span className="text-green-600">{packagesData.find(p => p.id === formData.package)?.price}</span>
+                    </p>
+                  </div>
+                )}
+
+                {/* Payment Options */}
+                <div className="grid md:grid-cols-2 gap-4">
+                  {/* Bank Transfer */}
+                  <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-2xl p-5 text-white">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold">{t("contact.bankingTitle")}</h4>
+                        <p className="text-green-100 text-xs">{t("contact.bankingSubtitle")}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-1.5 text-sm">
+                      <div className="bg-white/10 rounded-lg p-2">
+                        <p className="text-green-200 text-[10px] uppercase tracking-wide">{t("contact.accountHolder")}</p>
+                        <p className="font-semibold text-xs">MONSIEUR MOHAMMED SAID EL BOUZDOUDI</p>
+                      </div>
+                      <div className="bg-white/10 rounded-lg p-2">
+                        <p className="text-green-200 text-[10px] uppercase tracking-wide">RIB</p>
+                        <p className="font-mono font-bold text-xs tracking-wide">230 727 2633040211016600 70</p>
+                      </div>
+                      <div className="bg-white/10 rounded-lg p-2">
+                        <p className="text-green-200 text-[10px] uppercase tracking-wide">IBAN</p>
+                        <p className="font-mono font-bold text-xs tracking-wide">MA64 2307 2726 3304 0211 0166 0070</p>
+                      </div>
+                      <div className="bg-white/10 rounded-lg p-2">
+                        <p className="text-green-200 text-[10px] uppercase tracking-wide">Code SWIFT</p>
+                        <p className="font-mono font-bold text-xs">CIHMMAMC</p>
+                      </div>
+                    </div>
+
+                    <div className="mt-3 pt-3 border-t border-white/20">
+                      <button
+                        type="button"
+                        onClick={() => setShowQRModal(true)}
+                        className="bg-white rounded-xl p-2 mx-auto w-fit block cursor-pointer hover:scale-105 transition-transform"
+                      >
+                        <Image
+                          src="/bank-qr.png"
+                          alt="Scan for bank details - Click to enlarge"
+                          width={280}
+                          height={400}
+                          className="w-full max-w-[120px] h-auto rounded-lg"
+                        />
+                        <p className="text-[10px] text-gray-500 mt-1 text-center">{t("contact.clickToEnlarge")}</p>
+                      </button>
+                    </div>
+
+                    <p className="text-green-100 text-xs mt-2">
+                      {t("contact.transferNote")}
+                    </p>
+                  </div>
+
+                  {/* PayPal */}
+                  <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-5 text-white">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+                        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.59 3.025-2.566 6.082-8.558 6.082h-2.19c-1.717 0-3.146 1.27-3.403 2.955l-1.12 7.106c-.083.518.32.99.846.99h4.606c.524 0 .967-.382 1.05-.9l.896-5.678c.082-.518.525-.9 1.05-.9h.677c4.298 0 7.664-1.746 8.647-6.796.403-2.067.135-3.666-1.853-4.572z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold">{t("contact.paypalTitle")}</h4>
+                        <p className="text-blue-100 text-xs">{t("contact.paypalSubtitle")}</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white/10 rounded-xl p-3 mb-3">
+                      <p className="text-blue-200 text-[10px] uppercase tracking-wide mb-1">{t("contact.paypalSendTo")}</p>
+                      <p className="font-mono font-bold text-sm break-all">mohammedsaidelbouzdoudi99@gmail.com</p>
+                    </div>
+
+                    <div className="bg-white/10 rounded-lg p-3">
+                      <p className="text-blue-200 text-xs mb-2">{t("contact.paypalHowTo")}</p>
+                      <ol className="text-xs space-y-1 text-blue-50">
+                        <li className="flex items-start gap-2">
+                          <span className="bg-white/20 rounded-full w-4 h-4 flex items-center justify-center text-[10px] flex-shrink-0 mt-0.5">1</span>
+                          <span>{t("contact.paypalStep1")}</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="bg-white/20 rounded-full w-4 h-4 flex items-center justify-center text-[10px] flex-shrink-0 mt-0.5">2</span>
+                          <span>{t("contact.paypalStep2")}</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="bg-white/20 rounded-full w-4 h-4 flex items-center justify-center text-[10px] flex-shrink-0 mt-0.5">3</span>
+                          <span>{t("contact.paypalStep3")}</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="bg-white/20 rounded-full w-4 h-4 flex items-center justify-center text-[10px] flex-shrink-0 mt-0.5">4</span>
+                          <span>{t("contact.paypalStep4")}</span>
+                        </li>
+                      </ol>
+                    </div>
+
+                    <p className="text-blue-200 text-[10px] mt-3 text-center">
+                      {t("contact.paypalIdeal")}
+                    </p>
+                  </div>
+                </div>
 
                 {/* Payment Screenshot Upload */}
                 <div className="space-y-3">
