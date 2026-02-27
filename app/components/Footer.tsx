@@ -53,13 +53,13 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Sessions</h3>
             <div className="flex flex-col gap-2 text-sm">
-              <a href="#private-pricing" className="hover:text-green-400 transition-colors">
+              <a href="/private-sessions" className="hover:text-green-400 transition-colors">
                 1-on-1 Sessions
               </a>
-              <a href="#group-sessions" className="hover:text-green-400 transition-colors">
+              <a href="/group-sessions" className="hover:text-green-400 transition-colors">
                 Group Sessions
               </a>
-              <a href="#how-it-works" className="hover:text-green-400 transition-colors">
+              <a href="/how-it-works" className="hover:text-green-400 transition-colors">
                 {t("footer.howItWorks")}
               </a>
             </div>
@@ -81,10 +81,10 @@ export default function Footer() {
               <a href="/careers" className="hover:text-green-400 transition-colors">
                 {t("footer.teachWithUs")}
               </a>
-              <a href="#faq" className="hover:text-green-400 transition-colors">
+              <a href="/faq" className="hover:text-green-400 transition-colors">
                 {t("footer.faq")}
               </a>
-              <a href="#contact" className="hover:text-green-400 transition-colors">
+              <a href="/contact" className="hover:text-green-400 transition-colors">
                 {t("footer.contact")}
               </a>
               <a href="/rules" className="hover:text-green-400 transition-colors">

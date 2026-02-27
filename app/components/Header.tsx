@@ -22,12 +22,12 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: "#intro-video", label: t("header.meetTeacher") },
-    { href: "#why-takalam", label: t("header.whyTakalam") },
-    { href: "#private-sessions", label: t("header.privateSessions") },
-    { href: "#group-sessions", label: t("header.groupSessions") },
-    { href: "#faq", label: t("header.faq") },
-    { href: "#contact", label: t("header.contact") },
+    { href: "/meet-teacher", label: t("header.meetTeacher") },
+    { href: "/why-takalam", label: t("header.whyTakalam") },
+    { href: "/private-sessions", label: t("header.privateSessions") },
+    { href: "/group-sessions", label: t("header.groupSessions") },
+    { href: "/faq", label: t("header.faq") },
+    { href: "/contact", label: t("header.contact") },
     { href: "/careers", label: t("header.teachWithUs"), isHiring: true },
   ];
 
@@ -103,7 +103,7 @@ export default function Header() {
           >
             <LanguageSwitcher />
             <a
-              href="#contact"
+              href="/contact"
               className="bg-green-600 text-white px-4 xl:px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors shadow-sm whitespace-nowrap"
             >
               {t("header.getStarted")}
@@ -176,7 +176,7 @@ export default function Header() {
               </div>
               <div className="px-4 pt-2">
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="block text-center bg-green-600 text-white px-5 py-3 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
