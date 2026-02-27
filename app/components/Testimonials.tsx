@@ -357,9 +357,9 @@ export default function Testimonials() {
                         className="w-full h-full object-cover"
                         controls
                         playsInline
-                        preload="metadata"
+                        preload="auto"
+                        src={`${video.src}#t=0.001`}
                       >
-                        <source src={video.src} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
                     </div>
