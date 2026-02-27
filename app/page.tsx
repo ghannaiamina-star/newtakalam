@@ -1,17 +1,17 @@
 import Header from "./components/Header";
-import HeroMinimal from "./components/HeroMinimal";
+import Hero from "./components/Hero";
 import Contact from "./components/Contact";
-import FooterMinimal from "./components/FooterMinimal";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main id="main-content">
-        <HeroMinimal />
+        <Hero />
         <Contact />
       </main>
-      <FooterMinimal />
+      <Footer />
     </>
   );
 }

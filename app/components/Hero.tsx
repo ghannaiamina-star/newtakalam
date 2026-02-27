@@ -43,16 +43,6 @@ export default function Hero() {
               <span className="text-gray-500 text-3xl sm:text-4xl lg:text-5xl">{t("hero.subheadline")}</span>
             </h1>
 
-            {/* Darija Tagline */}
-            <p
-              className={`text-lg sm:text-xl text-amber-600 font-medium mb-6 ${
-                isVisible ? "animate-fade-in-up delay-150" : "opacity-0"
-              }`}
-              dir="rtl"
-            >
-              {t("hero.darijaTagline")}
-            </p>
-
             {/* Subheadline */}
             <p
               className={`text-lg sm:text-xl text-gray-600 max-w-xl mx-auto ${isRTL ? "lg:mr-0 lg:ml-auto" : "lg:mx-0"} mb-10 leading-relaxed ${
